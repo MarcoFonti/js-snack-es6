@@ -10,7 +10,7 @@ console.log ('JS OK');
 5- GRAZIE AL METODO FOREACH CREO PER OGNI ELEMENTO UNA TD PER QUANTI SONO INDICI
 6- STAMPO
  */
-
+/*
 // PRENDO IL METODO MAP PER CREARE UN NUOVO ARRAY CON LE INFORMAZIONI GIA' DISPONIBILI
 const arraysList = guests.map((element, index) => {
 
@@ -56,11 +56,55 @@ arraysList.forEach((element,index) => {
 console.log(arraysList);
 divElement.innerHTML = list
 
-   
+*/
+
+//! SCALETTA
+/*
+1- PRENDO ELEMENTI
+2- CREO ARRAY CON AL SUO INTERNO 7 OGGETTI
+3- USO IL METODO FILTER
+4- USO IL METODO MAP
+5- STAMPO
+*/
 
 
+// CON IL METODO FILTER PRENDO GLI ELEMENTI CHE VOGLIO 
+const voteSuperior70 = arrayStudents.filter((element) => {
+    if (element.grades > 70) {
+        return true;
+    } 
+
+    return false;
+})
 
 
+const voteId120 = arrayStudents.filter((element) => {
+    if (element.grades > 70 && element.id < 120 ) {
+        return true;
+    } 
 
+    return false;
+})
+
+console.log(voteSuperior70);
+console.log(voteId120);
+
+
+// CON IL METODO MAP CREO UN ARRAY IN CUI CI METTO I NOMI IN MAIUSCOLO
+const nameVoto = voteSuperior70.map((element) => {
+
+    return element.name.toUpperCase()
+
+}) 
+
+const nameId120 = voteId120.map((element) => {
+
+    return element.name.toUpperCase()
+
+}) 
+
+// STAMPO
+console.log('Persone con voto sopra il 70: ' + nameVoto);
+console.log('Persone con voto sopra il 70 e id superiore a 120: ' + nameId120);
 
 
