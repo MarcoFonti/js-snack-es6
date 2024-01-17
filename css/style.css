@@ -5,3 +5,8 @@
     border: 1px solid;
 }
 
+/* PARAGRAFO */
+#strong-paragraph {
+    color: blue;
+    font-size: 20px;
+}

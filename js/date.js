@@ -2,7 +2,7 @@
 console.log ('JS OK DATI');
 
 
-//! SCALETTA 
+//! SCALETTA SNACK 1
 /*
 1- RECUPERO ELEMENTI
 2- VARIABILE CHE CONOSCO
@@ -35,7 +35,7 @@ const guests = [
 
 */
 
-//! SCALETTA
+//! SCALETTA SNACK 2
 /*
 1- PRENDO ELEMENTI
 2- CREO ARRAY CON AL SUO INTERNO 7 OGGETTI
@@ -44,6 +44,7 @@ const guests = [
 5- STAMPO
 */
 
+/*
 // RECUPERO ELEMENTI
 const arrayStudents = 
 [
@@ -93,3 +94,43 @@ const arrayStudents =
 
 console.log(arrayStudents);
 
+*/
+
+//!SCALETTA SNACK 3
+/*
+1- RECUPERO ELEMENTO
+2- CREO ARRAY CON 5 OGETTI
+3- CON IL METODO FOREACH PER TROVO L'ELEMENTO CHE MI SERVE
+*/
+
+// RECUPERO ELEMENTO
+const strongParagraphElement = document.getElementById('strong-paragraph')
+
+// CREO ARRAY DI OGETTI
+const arrayBicycles = 
+[
+    {
+        name: 'Pinarello',
+        weight: 65,
+    },
+
+    {
+        name: 'Colnago',
+        weight: 75,
+    },
+
+    {
+        name: 'BMC',
+        weight: 35,
+    },
+
+    {
+        name: 'Specialized',
+        weight: 100,
+    },
+
+    {
+        name: 'Bianchi',
+        weight: 20,
+    },
+];

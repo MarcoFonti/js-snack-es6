@@ -1,7 +1,7 @@
 // CHECK 
 console.log ('JS OK');
 
-//! SCALETTA 
+//! SCALETTA SNACK 1
 /*
 1- RECUPERO ELEMENTI
 2- VARIABILE CHE CONOSCO
@@ -58,7 +58,7 @@ divElement.innerHTML = list
 
 */
 
-//! SCALETTA
+//! SCALETTA SANCK 2
 /*
 1- PRENDO ELEMENTI
 2- CREO ARRAY CON AL SUO INTERNO 7 OGGETTI
@@ -67,7 +67,7 @@ divElement.innerHTML = list
 5- STAMPO
 */
 
-
+/*
 // CON IL METODO FILTER PRENDO GLI ELEMENTI CHE VOGLIO 
 const voteSuperior70 = arrayStudents.filter((element) => {
     if (element.grades > 70) {
@@ -107,4 +107,23 @@ const nameId120 = voteId120.map((element) => {
 console.log('Persone con voto sopra il 70: ' + nameVoto);
 console.log('Persone con voto sopra il 70 e id superiore a 120: ' + nameId120);
 
+*/
+
+//!SCALETTA SNACK 3
+/*
+1- RECUPERO ELEMENTO
+2- CREO ARRAY CON 5 OGETTI
+3- CON IL METODO SOME TROVO L'ELEMENTO CHE MI SERVE
+*/
+
+// GIRO SUL L'ARRAY PER TROVARE LA BICI CON IL PESO PIU' BASSO
+const biciclesLessHeavy = arrayBicycles.forEach(({name,weight})=> { 
+    
+// PRENDO ELEMENTO CHE HA COME PESO 
+if(weight <= 20) {
+    console.log('La bicicletta con peso più basso è: ' + name)
+    strongParagraphElement.innerText = name
+};
+      
+});
 
