@@ -1,4 +1,4 @@
-/* TABELLA */ 
+/* TABELLA SNACK 1*/ 
 .my-table {
     width: 50%;
     margin: 10px auto;
@@ -9,4 +9,11 @@
 #strong-paragraph {
     color: blue;
     font-size: 20px;
+}
+
+/* TABELLA SNACK 4*/ 
+.my-table-snack {
+    width: 50%;
+    margin: 10px auto;
+    border: 1px solid;
 }

@@ -103,6 +103,7 @@ console.log(arrayStudents);
 3- CON IL METODO FOREACH PER TROVO L'ELEMENTO CHE MI SERVE
 */
 
+/*
 // RECUPERO ELEMENTO
 const strongParagraphElement = document.getElementById('strong-paragraph')
 
@@ -134,3 +135,58 @@ const arrayBicycles =
         weight: 20,
     },
 ];
+
+*/
+
+//!SCALETTA SNACK 4
+/*
+1- RECUPERO ELEMENTO
+2- CREO ARRAY CON 5 OGETTI
+3- NUMERI RANDOM
+4- ASSEGNO NUMERI RANDOM AI PUNTI E HAI FALLI
+5- CREO UN NUOVO ARRAY CON IL METODO MAP CON SOLO NOME E PUNTI
+6- STAMPO
+*/
+
+// RECUPERO ELEMENTI
+const divElement = document.querySelector('.my-table-snack');
+
+// VARIABILI MAX E MIN
+const maxPoint = 114
+const min = 0
+const maxFouls = 30
+
+// ARRAY DI OGETTI
+const arrayTeams = 
+[
+    {
+        name: 'Napoli',
+        points_made: 0,
+        fouls_immediately: 0,
+
+    },
+
+    {
+        name: 'Roma',
+        points_made: 0,
+        fouls_immediately: 0,
+    },
+
+    {
+        name: 'Lazio',
+        points_made: 0,
+        fouls_immediately: 0,
+    },
+
+    {
+        name: 'Bologna',
+        points_made: 0,
+        fouls_immediately: 0,
+    },
+
+    {
+        name: 'Milan',
+        points_made: 0,
+        fouls_immediately: 0,
+    },
+]

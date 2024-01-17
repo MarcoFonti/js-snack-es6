@@ -116,6 +116,7 @@ console.log('Persone con voto sopra il 70 e id superiore a 120: ' + nameId120);
 3- CON IL METODO SOME TROVO L'ELEMENTO CHE MI SERVE
 */
 
+/*
 // GIRO SUL L'ARRAY PER TROVARE LA BICI CON IL PESO PIU' BASSO
 const biciclesLessHeavy = arrayBicycles.forEach(({name,weight})=> { 
     
@@ -126,4 +127,67 @@ if(weight <= 20) {
 };
       
 });
+*/
+
+//!SCALETTA SNACK 4
+/*
+1- RECUPERO ELEMENTO
+2- CREO ARRAY CON 5 OGETTI
+3- NUMERI RANDOM
+4- ASSEGNO NUMERI RANDOM AI PUNTI E HAI FALLI
+5- CREO UN NUOVO ARRAY CON IL METODO MAP CON SOLO NOME E PUNTI
+6- STAMPO
+*/
+
+// GENERO NUMERI RANDOM 
+const randomNumber = arrayTeams.forEach ((element) => {
+
+    const randomPoint = Math.floor(Math.random()* (maxPoint + 1 - min) ) + min
+
+    const randomFouls = Math.floor(Math.random()* (maxFouls + 1 - min) ) + min
+
+    element.points_made = randomPoint
+    element.fouls_immediately = randomFouls
+
+});
+
+// CREO TABELLA 
+let list =
+ `
+<tr>
+<th scope="col">NOME</th>
+<th scope="col">PUNTI FATTI</th>
+<th scope="col">FALLI SUBITI</th>
+</tr>
+`
+// CREO  SEZIONE PER OGNI ELEMENTO 
+arrayTeams.forEach((element) => {
+
+    list +=  `
+    <tr>
+        <td>${element.name}</td>
+        <td>${element.points_made}</td>
+        <td>${element.fouls_immediately}</td>
+    ` 
+
+    list +=
+   `
+   </tr>
+   `
+});
+
+
+divElement.innerHTML = list
+console.log(arrayTeams)
+
+
+// CREO NUOVO ARRAY SOLO CON NOME E PUNTI
+const newArray = arrayTeams.map (({name, points_made}) => { return {name,points_made}});
+
+
+
+console.log(newArray)
+
+
+
 
